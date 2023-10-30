@@ -1,0 +1,21 @@
+body{
+    background-color: gainsboro;
+}
+
+.barra{
+    background-color: gainsboro;
+}
+
+.centrar {
+    margin: 0 auto;
+    width: 700px;
+    height: 450px;
+    padding: 20px;
+}
+
+.links{
+    color: black;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/centro_oncologico.css">
+    <title>Centro Oncologico</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg barra sticky-top p-md-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/logo.png" alt="Bootstrap" width="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-black" href="index.html">Inicio</a>
+                    <a class="nav-link text-black" href="historia.html">Historia</a>
+                    <a class="nav-link text-black" href="plazas.html">Plazas</a>
+                    <a class="nav-link text-black" href="monumentos.html">Monumentos</a>
+                    <a class="nav-link text-black" href="parques.html">Parques</a>
+                    <a class="nav-link text-black" href="centro_oncologico.html">Centro Oncologico</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h1>Centro Oncológico</h1>
+        <p>Solo existen dos centros integrales de diagnostico y tratamiento equipados con tecnologia de primer nivel
+            internacional dedicados a los
+            pacientes con cáncer de todo el país. Estos establecimientos cuentan con tecnología de vanguardia comparable
+            con
+            Estados Unidos y Europa.
+            Debemos estar orgullosos de decir que uno de ellos se encuentra en nuestra ciudad. Estos son el Centro
+            Oncológico
+            Integral (COI) ubicado en
+            la provincia de Neuquén y el Centro Oncológico Anna Rocca de Bonatti en Curuzú Cuatiá (Corrientes).</p>
+    </div>
+
+    <div class="container  d-flex justify-conntent-center ms-auto">
+        <img class="centrar img-fluid " src="imagenes/oncologico.jpg" alt="centro_oncologico">
+    </div>
+
+    <div class="container text-center">
+        <h1>Día de la Inaguración del Centro Oncológico</h1>
+    </div>
+
+    <div class="embebido mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_WWEYCg1TRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered border-primary">
+
+                <div class="container text-center">
+                    <h3>Servicios del Centro Oncológico</h3>
+                </div>
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Personal Medico</th>
+                        <th>Equipamiento Medico</th>
+                        <th>Radio Terapia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Técnicos en diagnéstico por imágenes</td>
+                        <td>Mamógrafo</td>
+                        <td>Acelerador lineal unique</td>
+                    </tr>
+
+                    <tr>
+                        <td>Psicólogos</td>
+                        <td>Resonador</td>
+                        <td>Sistema de branquiterapia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Asistentes sociales</td>
+                        <td>Ecográfo</td>
+                        <td>Calentadores solares</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container text-center col-6">
+        <h2>Registrate si necesitas atención</h2>
+        <div class="row">
+            <div class="col">
+                <!-- Sólo para viewport mayores a 576px de ancho. En pantallas pequeñas se apilan verticalmente</p> -->
+                <form class="form-inline" action="registro.php" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="mr-sm-2">Nombre:</label>
+                        <!-- .mb-2 para darle estilo a los campos de ingreso de texto -->
+                        <input type="nombre" class="form-control  mb-2 mr-sm-2" id="nombre"
+                            placeholder="Ingrese su nombre" name="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="mr-sm-2">Apellido:</label>
+                        <!-- .mb-2 para darle estilo a los campos de ingreso de texto -->
+                        <input type="apellido" class="form-control  mb-2 mr-sm-2" id="apellido"
+                            placeholder="Ingrese su apellido" name="apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="mr-sm-2"> Email :</label>
+                        <!-- .mb-2 para darle estilo a los campos de ingreso de texto -->
+                        <input type="email" class="form-control  mb-2 mr-sm-2" id="email" placeholder="Ingrese su Email"
+                            name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="mr-sm-2">Telefono:</label>
+                        <!-- .mb-2 para darle estilo a los campos de ingreso de texto -->
+                        <input type="telefono" class="form-control  mb-2 mr-sm-2" id="telefono"
+                            placeholder="Ingrese su telefono" name="telefono">
+                    </div>
+
+                    <button type="submit" type="button" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 mt-5 ms-auto bg-light">
+        <div class="row ms-auto text-center">
+            <div class="col-md-6 text-center">
+                <h2>Links del sitio</h2>
+                <a class="links" href="historia.html">Historia</a>
+                <a class="links" href="plazas.html">Plazas</a>
+                <a class="links" href="monumentos.html">Monumentos</a>
+                <a class="links" href="parques.html">Parques</a>
+                <a class="links" href="centro_oncologico.html">Centro Oncologico</a>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h2>Mapa de Curuzú Cuatiá</h2>
+                <img src="imagenes/mapacuruzu.png" class="img-fluid" alt="mapita_curuzu">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
